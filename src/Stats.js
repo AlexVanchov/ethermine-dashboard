@@ -8,7 +8,7 @@ import Payouts from "./StatsSubPanels/Payouts";
 import HashRates from "./StatsSubPanels/HashRates";
 
 const ETHERMINE_URL = "https://api.ethermine.org/";
-const ETH_EUR_URL = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR";
+const ETH_EUR_URL = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BGN";
 
 
 function fetchEtherDashData(minerId, setEthermineResponse) {
@@ -26,7 +26,7 @@ function fetchEtherStatsData(minerId, setEthermineResponse) {
 function fetchEthEur(setEthEur) {
     fetch(ETH_EUR_URL)
         .then((r) => r.json())
-        .then((body) => setEthEur(body.EUR));
+        .then((body) => setEthEur(body.BGN));
 }
 
 export default function Stats(props) {

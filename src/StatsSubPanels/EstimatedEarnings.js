@@ -34,7 +34,7 @@ export default function EstimatedEarnings(props) {
 
     function buildRow(name, multiplier) {
         let eth = (daily * multiplier).toFixed(5) + "ETH";
-        let eur = "€" + (daily * multiplier * props.ethEur).toFixed(2);
+        let eur = "BGN " + (daily * multiplier * props.ethEur).toFixed(2);
         console.log(eth, props.ethEur);
         return {name, eth, eur};
     }
@@ -62,7 +62,7 @@ export default function EstimatedEarnings(props) {
                         <TableRow>
                             <StyledTableCell></StyledTableCell>
                             <StyledTableCell align="right">ETH</StyledTableCell>
-                            <StyledTableCell align="right">EUR</StyledTableCell>
+                            <StyledTableCell align="right">BGN</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

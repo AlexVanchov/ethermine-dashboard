@@ -43,7 +43,7 @@ export default function StatsNode(props) {
                 setValue((parseFloat(data) / 1000000).toFixed(2) + " MH/s");
                 break;
             case "eur":
-                setValue("€" + parseFloat(data).toFixed(2));
+                setValue("BGN " + parseFloat(data).toFixed(2));
                 break;
             case "secs":
                 generateCountdown();

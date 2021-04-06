@@ -65,12 +65,12 @@ export default function Payouts(props) {
                     <Grid item xs={4}>
                         <div className="Label">Unpaid Balance</div>
                         <div className="Data">{unpaidBalance.toFixed(6) + " ETH"}</div>
-                        <div className="Data">{"€" + (unpaidBalance * props.ethEur).toFixed(2)}</div>
+                        <div className="Data">{"BGN " + (unpaidBalance * props.ethEur).toFixed(2)}</div>
                     </Grid>
                     <Grid item xs={4}>
                         <div className="Label">Payout Amount</div>
                         <div className="Data">{payoutAmount.toFixed(6) + " ETH"}</div>
-                        <div className="Data">{"€" + (payoutAmount * props.ethEur).toFixed(2)}</div>
+                        <div className="Data">{"BGN " + (payoutAmount * props.ethEur).toFixed(2)}</div>
                     </Grid>
                     <Grid item xs={4}>
                         <div className="Label">Time to Payout</div>
